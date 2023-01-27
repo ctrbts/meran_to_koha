@@ -1,0 +1,270 @@
+1 Exportamos la columna marc_record de la tabla indice_busqueda y la guardamos como csv
+2 Con el yaz_marcdump convertimos el contenido a txt (está en ISO marc)
+3 Queda separado por una línea en blanco cada marc_record
+
+4 Se pone cada marc_record en un loop que procese desde la primera línea hasta que llega a la línea que comienza con 020 (siempre está, aún vacía), corta en la anterior (no siempre es 856, puede ser 700) y arma y guarda (en algun lado jeje) el REGISTRO PADRE de ese MARC_RECORD.
+5 Luego sigue procesando las líneas siguientes hasta que empiezan las duplas 900-995. Corta cuando aparece otra vez 020 o cuando lo que sigue es una línea en blanco. Lo pega con el REGISTRO PADRE y lo imprime como nuevo REGISTRO. 
+6 Continua con ese MARC_RECORD. Si sigue una línea en blanco para y cierra el loop. Si aparece otra vez 020, repite el paso 2 hasta terminar.
+
+Ej. MARC_RECORD X _________________________________________________________
+06107     2200925   4500
+080    $a D11, V 21
+100    $a Velayos, José Luis $b   $c   $d  
+111    $a   $d   $n  
+245    $a Anatomía de la cabeza para odontólogos $b  
+500    $a  
+520    $a  El presente libro es un compendio de Anatomía de la Cabeza con un enfoque odontoestomatológico moderno y actualizado que se ha renovado completamente atendiendo a criterios de integración racional de los conocimientos básicos, imprescindibles para el futuro profesional de la Odontología. La orientación de esta 4ª edición es completamente nueva, ordenada de manera más funcional e incorporando nuevas figuras relacionadas con actos quirúrgicos y disecciones anatómicas.  Junto a la extraordinaria iconografía de D. Humberto Díaz Santana, queremos destacar los siguientes puntos que confieren su singularidad respecto de las ediciones anteriores:  – Enfoque clínico, coordinación y puesta al día de las consideraciones anatomoclínicas. – Inclusión de iconografía aportada por las modernas tecnologías de diagnóstico por imagen (RM, TC, reconstrucciones tridimensionales por escáner, etcétera). – Capítulo de dientes y ATM totalmente reelaborados, orientados a facilitar la comprensión de los procesos masticatorios así como al tema de las fracturas de la cara. – Nuevo apartado referente al dolor en odontoestomatología.  De forma complementaria –en consonancia con los cambios docentes que se avecinan– se ha añadido un CD que incorpora contenidos de ayuda contrastados a lo largo de las páginas del texto, y estructurado en tres grandes apartados:  – Parte I. Autoevaluación. Preguntas y respuestas contrastadas en las páginas del libro. – Parte II. Consideraciones clínicas. – Parte III. Ilustraciones y órganos de los sentidos (éste último, correspondiente al capítulo 17 de la 3ª edición).
+534    $a  
+650    $a ANATOMÍA ODONTOLÓGICA
+653    $a  
+700    $a Díaz Santana, Humberto $b   $c   $d   $e Ilustrador
+700    $a Bazán, Antonio $b   $c   $d   $e Coordinador
+856    $u  
+700    $a Ausín Puertas, Eduardo $b   $c   $d   $e Colaborador
+700    $a Concejo Cútoli, Carlos $b   $c   $d   $e Colaborador
+700    $a Fernández González, Secundino $b   $c   $d   $e Colaborador
+700    $a García Tutor, Emilio $b   $c   $d   $e Colaborador
+700    $a Gonzalo Sanz, Luis María $b   $c   $d   $e Colaborador
+700    $a Hontanilla Calatayud, Bernanrdo $b   $c   $d   $e Colaborador
+700    $a Irujo Andueza, Ana $b   $c   $d   $e Colaborador
+700    $a Monreal Redondo, Domingo de Guzmán $b   $c   $d   $e Colaborador
+700    $a Pueyo Villoslada, Jesús $b   $c   $d   $e Colaborador
+700    $a Schoendorff Rodríguez, Guillermo $b   $c   $d   $e Colaborador
+700    $a Velayos, José Luis $b   $c   $d   $e Prefacio
+_________________________________________________________________Acá corta y separar lo que está en la línea anterior como REGISTRO PADRE 1
+020    $a 978-84-9835-068-5
+041    $a Español
+043    $c Argentina
+245    $h Impreso en papel
+250    $a 4a. ed.
+260    $a Buenos Aires $b Médica Panamericana $c 2009
+300    $a  322 p. $b  il. byn. il. col. $c  
+440    $p   $v  
+490    $a   $v  
+505    $a   $g   $t  
+900    $b Monográfico
+910    $a Libro
+900    $g Bibliofolp $h   $i  
+995    $a   $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004711 $m   $o Domiciliario $p   $t MD-F2-C1 $u  
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004712 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004713 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004714 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004715 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004716 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004717 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004718 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004719 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004720 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp $h   $i  
+995    $a   $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005534 $m   $o Sala de Lectura $p   $t MD-F2-C1 $u  
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005535 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005536 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005537 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005538 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005539 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005540 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005541 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005542 $o Domiciliario $t MD-F2-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005543 $o Domiciliario $t MD-F2-C1
+_____________________________________Acá corta porque no hay más nada, cierra el loop de este MARC_RECORD X, agrega este ultimo segmento al REGISTRO PADRE 1 e imprime como nuevo REGISTRO A
+
+
+
+
+_________________Nuevo MARC_RECORD Y
+05379     2200985   4500
+080    $a 616.0757
+100    $b   $c   $d  
+111    $a   $d   $n  
+245    $a TC y RM diagnóstico por imagen del cuerpo humano $b  
+500    $a  
+520    $a  Diagnóstico preciso de una amplio abanico de enfermedades a través de las pruebas tomográficas más actuales. Con un enfoque clinico y gran número de referencias de apoyo, esta obra proporciona un rápido acceso a minuciosas descripciones de las diferentes aplicaciones de la TC y la RM en cada área anatómica, haciendo especial hincapié en la TC multicorte. Esta quinta edición actualizada, accesible y exhaustiva, incluye ejemplos reales de esta área tan visual. Muestra cómo interpretar los hallazgos de técnicas como la TC multicorte, la RM de 3 teslas y la PET TC, entre otras. Incluye una sección completamente actualizada sobre intervenciones guiadas por imagen y cinco nuevos capitulos (vias respiratorias, trasplante hepático, nefropatía por contraste y su prevención, pelvis masculina y pelvis femenina) para mantenerse al día de los nuevos avances. Presenta imágenes con calidad digital a lo largo de la obra para representar con los medios más innovadores lo que se observa en la práctica diaria. Correlaciona imágenes de TC y RM en todas las áreas del cuerpo humano.
+534    $a  título original: CT and MRI of the Whole Body
+650    $a RADIOLOGÍA
+653    $a  
+700    $a Haaga, John R. $b   $c   $d  
+856    $u  
+700    $a Dogra, Vikram S. $b   $c   $d  
+700    $a Forsting, Michael $b   $c   $d  
+700    $a Gilkeson, Robert C. $b   $c   $d  
+700    $a Kwon Ha, Hyun $b   $c   $d  
+700    $a Sundaram, Murali $b   $c   $d  
+______________________________________________Acá corta y seprar lo que está en la línea anterior como REGISTRO PADRE 2
+020    $a 978-84-8086-722-1
+041    $a Español
+043    $c España
+245    $h Impreso en papel
+250    $a 5a. ed.
+260    $a Barcelona $b Elsevier $c 2011
+300    $a  xxii; 1210 p. cap. 1-29 $b  il. byn. fot. byn. $c  
+440    $p   $v  
+490    $a   $v  
+505    $a   $g I $t  
+900    $b Monográfico
+910    $a Libro
+900    $g Bibliofolp $h   $i  
+995    $a   $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005494 $m   $o Sala de Lectura $p   $t MC-F4-C3 $u  
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005495 $o Domiciliario $t MC-F4-C3
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005496 $o Domiciliario $t MC-F4-C3
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005497 $o Domiciliario $t MC-F4-C3
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005498 $o Domiciliario $t MC-F4-C3
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005499 $o Domiciliario $t MC-F4-C3
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005500 $o Domiciliario $t MC-F4-C3
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005501 $o Domiciliario $t MC-F4-C4
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005502 $o Domiciliario $t MC-F4-C4
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005503 $o Domiciliario $t MC-F4-C4
+________________________________________Acá corta porque vuelve a aparecer 020 en la línea siguiente y agrega este segundo segmento al REGISTRO PADRE 2 e imprime como nuevo REGISTRO B
+020    $a 978-84-8086-723-8
+041    $a Español
+043    $c España
+245    $h Impreso en papel
+250    $a 5a. ed.
+260    $a Barcelona $b Elsevier $c 2011
+300    $a  xxii; 1213-2734 p. cap.30-53 $b  il. byn. fot. byn. $c  
+440    $p   $v  
+490    $a   $v  
+505    $a   $g II $t  
+900    $b Monográfico
+910    $a Libro
+900    $g Bibliofolp $h   $i  
+995    $a   $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005504 $m   $o Sala de Lectura $p   $t MC-F4-C4 $u  
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005505 $o Domiciliario $t MC-F4-C4
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005506 $o Domiciliario $t MC-F4-C4
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005507 $o Domiciliario $t MC-F4-C4
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005508 $o Domiciliario $t MC-F4-C5
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005509 $o Domiciliario $t MC-F4-C5
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005510 $o Domiciliario $t MC-F4-C5
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005511 $o Domiciliario $t MC-F4-C5
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005512 $o Domiciliario $t MC-F4-C5
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005513 $o Domiciliario $t MC-F4-C5
+_____________________________________Acá corta porque no hay más nada, cierra el loop de este MARC_RECORD Y, agrega este ultimo segmento al REGISTRO PADRE 2 e imprime como nuevo REGISTRO C
+
+
+
+
+
+___________________________Nuevo MARC_RECORD z
+03234     2200961   4500
+080    $a D27
+100    $a Finn, Sidney Bernard $b   $c   $d  
+111    $a   $d   $n  
+245    $a Odontología pediátrica $b  
+500    $a  
+520    $a  
+534    $a  
+650    $a ODONTOPEDIATRÍA
+653    $a  
+700    $a Akin, Jhonnye $b   $c   $d   $e Colaborador
+856    $u  
+700    $a Finley, Sara C. $b   $c   $d   $e Colaborador
+700    $a Finley, Wayne H. $b   $c   $d   $e Colaborador
+700    $a Hawes, Roland R. $b   $c   $d   $e Colaborador
+700    $a Hitchcoock, H. Perry $b   $c   $d   $e Colaborador
+700    $a Keller, Stanley E. $b   $c   $d   $e Colaborador
+700    $a Law, David B. $b   $c   $d   $e Colaborador
+700    $a Lewis, Thompson M. $b   $c   $d   $e Colaborador
+700    $a Manson Hing, Lincoln R. $b   $c   $d   $e Colaborador
+700    $a McCallum, Charles A. $b   $c   $d   $e Colaborador
+700    $a Moller, Palmi $b   $c   $d   $e Colaborador
+700    $a Parfitt, Gilbert J. $b   $c   $d   $e Colaborador
+700    $a Rao, Satish $b   $c   $d   $e Colaborador
+700    $a Ripa, Louis W. $b   $c   $d   $e Colaborador
+700    $a Russell, David L. $b   $c   $d   $e Colaborador
+700    $a Sim, Joseph $b   $c   $d   $e Colaborador
+700    $a Thomas, Joe P. $b   $c   $d   $e Colaborador
+700    $a Vaughn, Gwenyth R. $b   $c   $d   $e Colaborador
+700    $a Volker, Joseph F. $b   $c   $d   $e Colaborador
+700    $a Muñoz Seca, Carmen $b   $c   $d   $e Traductor
+___________________________________Acá corta y separa lo que está en la línea anterior como REGISTRO PADRE 3
+020    $a  
+041    $a Español
+043    $c México
+245    $h Impreso en papel
+250    $a 4a. ed.
+260    $a México $b Interamericana $c 1976
+300    $a  xv; 613 p. $b  il. byn. $c  
+440    $p   $v  
+490    $a   $v  
+505    $a   $g   $t  
+900    $b Monográfico
+910    $a Libro
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-002759 $o Domiciliario $t ME-F1-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-002760 $o Domiciliario $t ME-F1-C1
+900    $g Bibliofolp $h   $i  
+995    $a   $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-002761 $m   $o Sala de Lectura $p   $t ME-F1-C1 $u  
+______________________Acá corta porque vuelve a aparecer 020 en la línea siguiente y agrega este segundo segmento al REGISTRO PADRE 3 e imprime como nuevo REGISTRO C
+020    $a  
+041    $a Español
+043    $c México
+245    $h Impreso en papel
+250    $a 4a. ed.
+260    $a México $b Interamericana $c 1977
+300    $a   $b   $c  
+440    $p   $v  
+490    $a   $v  
+505    $a   $g   $t  
+900    $b Monográfico
+910    $a Libro
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-003042 $o Domiciliario $t ME-F1-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-003043 $o Domiciliario $t ME-F1-C1
+_________________Acá corta porque vuelve a aparecer 020 en la línea siguiente y agrega este tercer segmento al REGISTRO PADRE 3 e imprime como nuevo REGISTRO D
+020    $a  
+041    $a Español
+043    $c México
+245    $h Impreso en papel
+250    $a 4a. ed.
+260    $a México $b Interamericana $c 1980
+300    $a   $b   $c  
+440    $p   $v  
+490    $a   $v  
+505    $a   $g   $t  
+900    $b Monográfico
+910    $a Libro
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-003573 $o Domiciliario $t ME-F1-C1
+__________________Acá corta porque no hay más nada, cierra el loop de este MARC_RECORD z, agrega este ultimo segmento al REGISTRO PADRE 3 e imprime como nuevo REGISTRO E
+
+
+
+
+

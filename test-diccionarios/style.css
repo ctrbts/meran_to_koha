@@ -1,0 +1,33 @@
+#contenedor {
+    width: 450px;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin: 3rem auto;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: blueviolet;
+    font-size: large;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: green;
+    font-size: small;
+}
+
+button {
+    padding: 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 15px;
+    color: blueviolet;
+}
+
+button:hover {
+    box-shadow: 0 0.5rem 1rem gray;
+}

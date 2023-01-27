@@ -1,0 +1,20 @@
+- Primero armar los registros de la forma correcta (sacar los niveles y aplanar el marc)
+
+- Sobre el resultado:
+- Eliminar todas las líneas que terminen con (espacio espacio enter). Son las vacías
+- Luego, cuando aparezca $caracter espacio espacio espacio, eliminar esos caracteres(son subcampos vacíos)
+- Sacar un listado de todas las apariciones de 041 y 043 para armar gizmo de conversión a valores normalizados
+- Sacar un listado de todas las apariciones de 260 $c para armar las normalizaciones de fechas
+- Sacar un listado de 900 y 910 para ver los tipos de documentos presentes y armar la cabecera y el 008
+
+El campo 995 hay que reformatearlo:
+Valores fijos para Odontología:
+952    $a DOO $b DOO $y BK
+luego...
+$f pasa a $p 
+$o pasa a $7 si dice Sala de lectura va 1 si dice domiciliario va 0
+$t pasa a $o
+
+Después de este punto, podemos armar los campos que faltan y terminar con los registros!!!!!
+
+
