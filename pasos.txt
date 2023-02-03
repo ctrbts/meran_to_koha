@@ -11,10 +11,8 @@ El campo 995 hay que reformatearlo:
 Valores fijos para Odontología:
 952    $a DOO $b DOO $y BK
 luego...
-$f pasa a $p 
+$f pasa a $p
 $o pasa a $7 si dice Sala de lectura va 1 si dice domiciliario va 0
 $t pasa a $o
 
 Después de este punto, podemos armar los campos que faltan y terminar con los registros!!!!!
-
-
