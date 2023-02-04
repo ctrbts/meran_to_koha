@@ -1,6 +1,7 @@
 <?php
 
 $file = fopen("pasos.txt", "rb");
+
 if ($file == false) {
     echo "Error al abrir el archivo";
 } else {

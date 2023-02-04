@@ -1,0 +1,331 @@
+02630     2200625   4500
+080    $a D 24
+100    $a Leonardo, Mario Alberto $b   $c   $d  
+111    $a   $d   $n  
+245    $a Sistemas rotatorios en endodoncia $b instrumentos de niquel y titanio
+500    $a  
+520    $a  
+534    $a  
+650    $a ENDODONCIA
+653    $a  
+700    $a de Toledo Leonardo, Renato $b   $c   $d  
+700    $a Pereira Lopes, Hélio $b   $c   $d   $e Colaborador
+700    $a Azevedo Bazzi, Henrique Artur $b   $c   $d   $e Colaborador
+700    $a Soares, Ilson José $b   $c   $d   $e Colaborador
+700    $a Rivas Gutierrez, José Carlos $b   $c   $d   $e Colaborador
+700    $a Freitas Siqueira, José $b   $c   $d   $e Colaborador
+700    $a Ardines Limonchi, Pedro $b   $c   $d   $e Colaborador
+856    $u  
+650    $a RADIOGRAFÍA
+020    $a 85-74040-072-X
+041    $a Español
+043    $c Brasil
+245    $h Impreso en papel
+250    $a  
+260    $a São Paulo $b  Artes Médicas $c 2002
+300    $a  xxii; 325 p. $b  il. byn. fot. byn. il. col. fot. col $c  
+440    $p   $v  
+490    $a   $v  
+505    $a   $g   $t  
+900    $b Monográfico
+910    $a Libro
+900    $g Bibliofolp $h   $i  
+995    $a   $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-006037 $m   $o Sala de Lectura $p   $t MD-F5-C2 $u  
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-006038 $o Domiciliario $t MD-F5-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-006039 $o Domiciliario $t MD-F5-C1
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-006040 $o Domiciliario $t MD-F5-C2
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-006041 $o Domiciliario $t MD-F5-C2
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-006042 $o Domiciliario $t MD-F5-C2
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-006043 $o Domiciliario $t MD-F5-C2
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-006044 $o Domiciliario $t MD-F5-C2
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-006045 $o Domiciliario $t MD-F5-C2
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-006046 $o Domiciliario $t MD-F5-C2
+
+02116     2200589   4500
+080    $a D24
+100    $a Grossman, Louis I. $b   $c   $d  
+111    $a   $d   $n  
+245    $a Práctica endodóntica $b  
+500    $a  
+520    $a  
+534    $a  Título del original en ingles: "Endodontic Practique"
+650    $a ENDODONCIA
+653    $a  
+700    $a Muruzabal, Margarita $b   $c   $d   $e Traductor
+856    $u  
+020    $a  
+041    $a Español
+043    $c Argentina
+245    $h Impreso en papel
+250    $a 4a. ed.
+260    $a Buenos Aires $b  Mundi $c 1981
+300    $a  xv; 501 p. $b   $c  
+440    $p   $v  
+490    $a   $v  
+505    $a   $g   $t  
+900    $b Monográfico
+910    $a Libro
+900    $g bibliofolp $h   $i  
+995    $a   $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-003076 $m   $o Sala de Lectura $p   $t MD-F5-C1 $u  
+900    $g bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-003381 $o Domiciliario $t MD-F5-C1
+900    $g bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-006618 $o Domiciliario $t MD-F5-C1
+900    $g BIBLIOFOLP
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-003077 $o Domiciliario $t MD-F5-C1
+900    $g GFC $h   $i  
+995    $a   $c Facultad de Odontología $d Facultad de Odontología $e Baja $f DOO-LIB-005199 $m   $o Domiciliario $p   $t MD-F5-C1 $u  
+041    $a Español
+043    $c Argentina
+245    $h Impreso en papel
+250    $a 2a. ed.
+260    $a Buenos Aires $b Progrental $c 1963
+300    $a 415 p. $b  il. byn.
+900    $b Monográfico
+910    $a Libro
+900    $g MV
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-001254 $o Domiciliario $t MD-F5-C1
+900    $g MV
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f  DOO-LIB-001255 $o Domiciliario $t MD-F5-C1
+900    $g MV
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f  DOO-LIB-001256 $o Domiciliario $t MD-F5-C1
+
+03208     2200793   4500
+080    $a D24
+100    $b   $c   $d  
+111    $a   $d   $n  
+245    $a Endodoncia $b técnicas clínicas y bases científicas
+500    $a  
+520    $a  
+534    $a  
+650    $a ENDODONCIA
+653    $a  
+700    $a Canalda Sahli, Carlos $b   $c   $d   $e Director
+856    $u  
+700    $a Berástegui Jimeno, Esther $b   $c   $d  
+700    $a Boj Quesada, Juan Ramón $b   $c   $d  
+700    $a Brau Aguadé, Esteban $b   $c   $d  
+700    $a Canalda Sahli, Carlos $b   $c   $d  
+700    $b   $c   $d  
+700    $a Brau Aguadé, Esteban $b   $c   $d  
+700    $a Brau Aguadé, Esteban $b   $c   $d   $e Director
+700    $a Cortés Lillo, Olga $b   $c   $d  
+700    $a Faus Llácer, Vicente J. $b   $c   $d  
+700    $a García Barbero, Javier $b   $c   $d  
+700    $a Gay Escoda, Cosme $b   $c   $d  
+700    $a González Bahillo, José $b   $c   $d  
+700    $a Hidalgo Arroquia, Juan José $b   $c   $d  
+700    $a Llamas Cadaval, Rafael $b   $c   $d  
+700    $a Biedma, Benjamín Martín $b   $c   $d  
+700    $a Navajas y Rodriguez de Mondelo, José Manuel $b   $c   $d  
+700    $a Pumarola Suñé, José $b   $c   $d  
+700    $a Varela Patiño, Purificación $b   $c   $d  
+700    $a Villa Vigil, Alfonso Manuel $b   $c   $d  
+700    $a Zabalegui Andonegui, Borja $b   $c   $d  
+700    $a Zabalegui Andonegui, Ion $b   $c   $d  
+020    $a 84-458-1668-3
+041    $a Español
+043    $c España
+245    $h Impreso en papel
+250    $a 2a. ed.
+260    $a Barcelona $b  Masson $c 2006
+300    $a  xxii; 388 p. $b  il. col. fot. col. $c  
+440    $p   $v  
+490    $a   $v  
+505    $a   $g   $t  
+900    $b Monográfico
+910    $a Libro
+900    $g Bibliofolp $h   $i  
+995    $a   $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005338 $m   $o Sala de Lectura $p   $t MD-F4-C8 $u  
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005339 $o Domiciliario $t MD-F4-C8
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005340 $o Domiciliario $t MD-F4-C8
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005341 $o Domiciliario $t MD-F4-C8
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005342 $o Domiciliario $t MD-F4-C8
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005699 $o Domiciliario $t MD-F4-C8
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005700 $o Domiciliario $t MD-F4-C8
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005701 $o Domiciliario $t MD-F4-C8
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005702 $o Domiciliario $t MD-F4-C8
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-005703 $o Domiciliario $t MD-F4-C8
+
+01384     2200517   4500
+080    $a 615
+100    $a Goodman, Louis Sanford $b   $c   $d  
+111    $a   $d   $n  
+245    $a Bases farmacológicas de la terapéutica  $b  
+500    $a  
+520    $a  
+534    $a  
+650    $a FARMACOLOGÍA
+653    $a  
+700    $a Gilman, Alfred $b   $c   $d  
+856    $u  
+700    $a Palacios Lopez, A. $b   $c   $d   $e Traductor
+700    $a Vela Treviño, Homero $b   $c   $d   $e Traductor
+020    $a  
+041    $a Español
+043    $c México
+245    $h Impreso en papel
+250    $a 2a. ed.
+260    $a México $b UTEHA $c 1957
+300    $a  xiii; 1022 p. $b   $c  
+440    $p   $v  
+490    $a   $v  
+505    $a   $g I $t  
+900    $b Monográfico
+910    $a Libro
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-000147 $o Sala de Lectura $t MC-F1-C1
+020    $a  
+041    $a Español
+043    $c México
+245    $h Impreso en papel
+250    $a 2a. ed.
+260    $a México $b UTEHA $c 1957
+300    $a  ix; 1025/2075 p. $b   $c  
+440    $p   $v  
+490    $a   $v  
+505    $a   $g II $t  
+900    $b Monográfico
+910    $a Libro
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-000148 $o Sala de Lectura $t MC-F1-C1
+
+02206     2200493   4500
+080    $a 615 B 76
+245    $a Goodman & Gilman. Las bases farmacológicas de la terapéutica
+650    $a FARMACOLOGÍA
+700    $a Brunton, Laurence L. $e Editor
+700    $a Lazo, John S. $e Colaborador
+700    $a Parker, Keith L. $e Colaborador
+700    $a Blengio, Jose Rafael $e Traductor
+700    $a Orizaga Samperio, Jorge $e Traductor
+700    $a Pérez Tamayo Ruíz, Ana María $e Traductor
+700    $a Bravo Valdéz, Alejandro $e Director editorial
+020    $a 13-978-970-10-5739-1
+041    $a Español
+043    $c Argentina
+245    $h Impreso en papel
+250    $a 11 a.
+260    $a México $b McGraw-Hill Interamericana $c 2006
+300    $a xxiii; 2017 p
+900    $b Monográfico
+910    $a Libro
+900    $g GFC
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004646 $o Domiciliario $t MC-F1-C2/3
+900    $g GFC
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004647 $o Domiciliario $t MC-F1-C2/3
+900    $g GFC
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004648 $o Domiciliario $t MC-F1-C2/3
+900    $g GFC
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004649 $o Domiciliario $t MC-F1-C2/3
+900    $g GFC
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-.LIB-004650 $o Domiciliario $t MC-F1-C2/3
+900    $g GFC
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004651 $o Domiciliario $t MC-F1-C2/3
+900    $g GFC
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004652 $o Domiciliario $t MC-F1-C2/3
+900    $g GFC
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004653 $o Domiciliario $t MC-F1-C2/3
+900    $g GFC
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004654 $o Domiciliario $t MC-F1-C2/3
+900    $g GFC
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004655 $o Domiciliario $t MC-F1-C2/3
+
+01417     2200385   4500
+080    $a Tesis
+100    $a Oviedo Arévalo, Juan José Manuel $b   $c   $d  
+111    $a   $d   $n  
+245    $a Incidencia de lesiones sobre la mucosa bucal producidas por acción del tabaco en pacientes asistidos en la Facultad de Odontología de La Plata durante el año 1998 $b  
+500    $a  
+520    $a  
+534    $a  
+650    $a TÉSIS DE DOCTORADO
+653    $a  
+700    $a Casariego, Zulema Juana $b   $c   $d   $e Director
+856    $u  
+020    $a  
+041    $a Español
+043    $c Argentina
+245    $h Impreso en papel
+250    $a  
+260    $a La Plata $b  [s. n.] $c 2004
+300    $a  167 p. $b   $c  
+440    $p   $v  
+490    $a   $v  
+502    $b  Doctor en Odontología $c  Universidad Nacional de La Plata. Facultad de Odontología $d  2004
+505    $a   $g   $t  
+900    $b Monográfico
+910    $a Tesis
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004207 $o Sala de Lectura $t MZ-O
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004208 $o Sala de Lectura $t MZ-O $u Ejemplar guardado en depósito
+900    $g Bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-004209 $o Sala de Lectura $t MZ-O $u Ejemplar guardado en depósito
+
+02404     2200277   4500
+080    $a Tesis
+100    $a Catino, Magali $b   $c   $d  
+111    $a   $d   $n  
+245    $a La planificación estratégica y la gestión de la evaluación institucional como política permanente de mejoramiento de la Universidad Nacional de La Plata para el período 2018-2022 $b  
+500    $a  Atención: Ejemplar en formato digital solicitar por mail o visitar campus virtual BibliotecaDigital
+520    $a En esa línea, son objetivos específicos de la administración alcanzar una distribución armónica y una ejecución ordenada de su presupuesto y lograr la organización más adecuada de su personal docente y no docente. También son objetivos importantes para lograr su correcto funcionamiento, la implementación de los sistemas y procedimientos administrativos apropiados, proporcionar el marco normativo necesario para lograrlo, tener el registro correspondiente de su patrimonio y alcanzar la cobertura adecuada de los servicios generales y de mantenimiento y limpieza de los bienes muebles e inmuebles. Por su parte, la dotación y administración de los servicios estudiantiles no académicos que faciliten la inclusión y permanencia en la universidad de todo aquel ciudadano que tenga la voluntad de estudiar, constituyen un capítulo central de la temática. Son herramientas fundamentales, los sistemas informáticos para la administración de recursos, personal y alumnos, los manuales de procedimiento consensuados, un cuerpo normativo apropiado, un conjunto de becas, servicios y actividades destinadas a la inclusión estudiantil, servicios adecuados para docentes y no docentes, y un plan director que oriente sobre las prioridades en las obras y servicios necesarios para el funcionamiento de la UNLP y su mantenimiento.
+534    $a  
+650    $a TESIS DE ESPECIALIZACIÓN EN GESTIÓN DE LA EDUCACIÓN SUPERIOR
+650    $a EVALUACIÓN
+650    $a UNLP
+653    $a  
+700    $a Tauber, Fernando $b   $c   $d   $e Director
+856    $u http://sedici.unlp.edu.ar/handle/10915/115503
+041    $a Español
+043    $c Argentina
+245    $h Documento digital
+260    $a La Plata $b [s.n.] $c 2020
+300    $a 45 p.
+502    $b Especialista en Gestión de la Educación Superior $c Universidad Nacional de La Plata. Facultad de Odontología $d 2020
+900    $b Monográfico
+910    $a Tesis
+
+00746     2200301   4500
+080    $a D5
+100    $b   $c   $d  
+110    $a Facultad de Odontología. Universidad Nacional de La Plata
+111    $a   $d   $n  
+245    $a ADEI  $b 50 - 100 HS.
+500    $a  
+520    $a  
+534    $a  
+650    $a ADEI
+653    $a  
+700    $a Tosti, Sonia Beatriz $b   $c   $d   $e Director
+856    $u  
+650    $a EXTENSIÓN UNIVERSITARIA
+020    $a  
+250    $a  
+260    $a La Plata $b FOLP-UNLP $c 2014
+300    $a   $b   $c  
+440    $p   $v  
+490    $a   $v  
+505    $a   $g   $t  
+910    $a Extensión
+900    $g GFC
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-007079 $o Sala de Lectura $t MZ-EX
+
