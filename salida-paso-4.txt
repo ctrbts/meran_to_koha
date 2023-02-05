@@ -1,0 +1,47 @@
+02116     2200589   4500
+080    $a D24
+100    $a Grossman, Louis I.
+245    $a Práctica endodóntica
+534    $a  Título del original en ingles: "Endodontic Practique"
+650    $a ENDODONCIA
+700    $a Muruzabal, Margarita $e Traductor
+041    $a Español
+043    $c Argentina
+245    $h Impreso en papel
+250    $a 4a. ed.
+260    $a Buenos Aires $b  Mundi $c 1981
+300    $a  xv; 501 p.
+900    $b Monográfico
+910    $a Libro
+900    $g bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-003076 $o Sala de Lectura $t MD-F5-C1
+900    $g bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-003381 $o Domiciliario $t MD-F5-C1
+900    $g bibliofolp
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-006618 $o Domiciliario $t MD-F5-C1
+900    $g BIBLIOFOLP
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-003077 $o Domiciliario $t MD-F5-C1
+900    $g GFC
+995    $c Facultad de Odontología $d Facultad de Odontología $e Baja $f DOO-LIB-005199 $o Domiciliario $t MD-F5-C1
+
+02116     2200589   4500
+080    $a D24
+100    $a Grossman, Louis I.
+245    $a Práctica endodóntica
+534    $a  Título del original en ingles: "Endodontic Practique"
+650    $a ENDODONCIA
+700    $a Muruzabal, Margarita $e Traductor
+041    $a Español
+043    $c Argentina
+245    $h Impreso en papel
+250    $a 2a. ed.
+260    $a Buenos Aires $b Progrental $c 1963
+300    $a 415 p. $b  il. byn.
+900    $b Monográfico
+910    $a Libro
+900    $g MV
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f DOO-LIB-001254 $o Domiciliario $t MD-F5-C1
+900    $g MV
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f  DOO-LIB-001255 $o Domiciliario $t MD-F5-C1
+900    $g MV
+995    $c Facultad de Odontología $d Facultad de Odontología $e Disponible $f  DOO-LIB-001256 $o Domiciliario $t MD-F5-C1
