@@ -150,12 +150,11 @@ echo 'Archivo ' . $file_clean . ' creado exitosamente!<hr><br>';
  * estoy trabajando con un solo registro que contien dos niveles
  * la salida son dos registros con el mismo encabezado
  *
- * falta crear funcion recursiva para que trabaje sobre el archivo
+ * falta crearfuncion recursiva para que trabaje sobre el archivo
  * que procesa el script de forma completa
  */
 
 $file_filled = 'salida-paso-4.txt';
-
 $file = file('salida.txt');
 //$file = file($file_clean);
 
@@ -170,9 +169,9 @@ foreach ($file as $file_line) {
         // vamos almacentando las lineas en otro arreglo temporal
         $record[] = $file_line;
         file_put_contents('record.txt', $record);
-    } else {
+    }/*  else {
         break;
-    }
+    }  */
 }
 
 // trabajamos sobre el arreglo temporal y separamos en encabezado y niveles
@@ -186,10 +185,7 @@ foreach ($record as $record_line) {
     // si todavia no llegaos a la 020 armamos el encabezado
     if ($count_020 === 0) {
         $header[] = $record_line;
-    }
-
-    // encontramos el primer 020 llenamos el primer el nivel
-    if ($count_020 > 0) {
+    } else {
         $levels[] = $record_line; // armamos el encabezado
     }
 }
@@ -198,254 +194,17 @@ file_put_contents('header.txt', $header);
 file_put_contents('levels.txt', $levels);
 
 // trabajamos con los niveles
-$temp_level = [];
-foreach ($levels as $level_line) {
-    // si encontramos otro nivel armamos hasta aca y lo agregamos al encabezado
-    // egregamos al archivo de salida el resultado
-    if (strpos($level_line, "020") === 0 || strpos($level_line, "041") === 0) {
-        //$temp_level[] = PHP_EOL;
-
-        $result = array_merge($header, $temp_level);
-    }
-
-    $temp_level[] = $level_line;
-}
-
-file_put_contents('temp_levels.txt',$temp_level);
-
-file_put_contents($file_filled, $result, FILE_APPEND | LOCK_EX);
-echo 'Archivo ' . $file_filled . ': registro agregado!<hr><br>';
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-/* $file = fopen($file_clean, "r");
-$line = fgets($file);
-$array = [];
-$tempArray = [];
-
-while (!feof($file)) {
-    if (substr($line, 0, 3) == "020" || substr($line, 0, 3) == "041") {
-        if (!empty($tempArray)) {
-            array_push($array, $tempArray);
-        }
-        $tempArray = [];
-    }
-    if (!empty(trim($line))) {
-        $tempArray[] = $line;
-    }
-    $line = fgets($file);
-}
-fclose($file);
-
-print_r($array);
- */
-
-
-
-//$count_EOL = 0; // Contador para saltos de línea
-//$count_910 = 0; // Contador para líneas que comienzan con "910"
-
-
-
-
-
-
-
-    /* if (strpos($line, "020") !== 0 || strpos($line, "041") !== 0) {
-        } else {
-            $levels[] = $line; // armamos el nivel
-        } */
-
-        /* if (strpos($temp_line, '910') === 0) {
-            $count_910++;
-        } */
-
-        /* for ($idx = 0; $idx < count($levels); $idx++) {
-            if ((substr($levels[$idx], 0, 3) != "020") || (substr($levels[$idx], 0, 3) != "020")) {
-                echo $levels[$idx] . "\n";
-            }
-        } */
-
-        //$count_041 = 0;
-
-        //$result = array_merge($header, $levels);
-
-        //echo 'Hay ' . $count_910 . ' registros en el archivo.<br><br>';
-        //echo 'Hay ' . $count_EOL . ' registros en el archivo. Deberia haber ' . $count_910 . '<br><br>';
-
-        // agrega al archivo de salida el contenido de lo quq vaos procesando
-        //file_put_contents($file_filled, $record, FILE_APPEND | LOCK_EX);
-        //file_put_contents($file_filled, $result);
-
-
-    /*     if (strpos($line, '910') === 0) {
-        $count_910++;
-    }
-
-    if (strpos($line, "020") !== 0 || strpos($line, "041") !== 0) {
-        $header[] = $line; // armamos el encabezado
-    } else {
-        $levels[] = $line; // armamos el nivel
-    }
-
-    if (strpos($line, '910') === 0) {
-        $count_910++;
-    }
-
-    if ($line === PHP_EOL) {
-        $result = array_replace($record, $header);
-        $count_EOL++;
-    }
-
-    if ($count_910 > 1) {
-    }
- */
-
-
-
-
-
-//////////////////////////
-
-/* $file = fopen($file_clean, "r") or die("No se puede abrir el archivo");
-
-//recorre el archivo hasta que encuentra una linea en blanco
-while (!feof($file)) {
-    $line = fgets($file);
-    if (trim($line) == '') {
-        break;
-    }
-    echo $line . "<br>";
-}
-fclose($file);
- */
-
-
-//recorre archivo hasta campo "020"
-
-/* $file = fopen($file_clean, "r") or die("No se puede abrir el archivo");
-$lines = [];
-$count_910 = 0;
-while (!feof($file)) {
-    $line = fgets($file);
-    if (strpos($line, "910") === 0) {
-        $count_910++;
-    }
-    if (strpos($line, "020") === 0 || strpos($line, "041") === 0) {
-        break;
-    }
-    $lines[] = $line;
-}
-fclose($file);
-
-print_r($lines);
- */
-////////////////////////////////////
-
-/* $lines = file($file_clean); // Carga el contenido del archivo en un array
-$found = false; // Bandera para indicar si se ha encontrado una línea que comience con "910"
-$result = []; // Array para almacenar las líneas
-$current = []; // Array temporal para almacenar las líneas hasta encontrar una línea con "020" o "041"
-
-foreach ($lines as $line) {
-    if (strpos($line, '910') === 0) {
-        $found = true;
-    }
-    if ($found) {
-        $current[] = $line;
-        if (strpos($line, '020') === 0 || strpos($line, '041') === 0 || $line === "\n") {
-            $result[] = $current;
-            $current = [];
-            $found = false;
-        }
-    }
-}
-
-print_r($result); */
-
-
-
-// Carga el contenido del archivo en un array
-/* $lines = file($file_clean);
 $results = [];
-
-$found = false;
-
-foreach ($lines as $line) {
-    if (strpos($line, '020') === 0 || strpos($line, '041') === 0 || trim($line) === '') {
-        if ($found) {
-            break;
+foreach ($levels as $level_line) {
+    if (strpos($level_line, "020") === 0 || strpos($level_line, "041") === 0) {
+        $results[]= PHP_EOL;
+        foreach ($header as $header_line) {
+            $results[]= $header_line;// si todavia no llegaos a la 020 armamos el encabezado
         }
-        $found = true;
     }
-    if ($found) {
-        $results[] = $line;
-    }
-}
- */
 
-/* $file = fopen($file_clean, "r"); // Abre el archivo en modo de lectura
-$array = []; // Inicializa un array para guardar las líneas
-$newArray = []; // Inicializa un nuevo array para guardar las líneas después de "020" o "041"
-
-while (!feof($file)) {
-    $line = fgets($file);
-    if (trim($line) === '') {
-        break;
-    }
-    if (strpos($line, '020') === 0 || strpos($line, '041') === 0) {
-        $newArray[] = $line;
-        continue;
-    }
-    $array[] = $line;
-}
-fclose($file); // Cierra el archivo
-
-echo('<pre>');
-print_r($array); // Imprime el array anterior a "020" o "041"
-echo('</pre>');
-
-echo('<pre>');
-print_r($newArray); // Imprime el array después de "020" o "041"
-echo('</pre>'); */
-
-
-/* $file_in  = 'entrada.txt';
-$file_out = 'salida2.txt';
-
-$lines_in  = file($file_in);
-$lines_out = [];
-
-$to_clean = '/[\$][a-z0-9]{1}[\s]{2}+/';
-
-foreach ($lines_in as $line) {
-    if (strpos($line, $to_clean) !== 0) {
-        $lines_out[] = $line;
-        //echo $line . "<br>"; // salida en pantalla
-    }
+    $results[] = $level_line;
 }
 
-file_put_contents($file_out, $lines_out);
-echo 'Archivo ' . $file_out . ' creado con éxito!';
-echo "<br><hr><br>";
-
-file_put_contents('salida3.txt', implode("\n", $lines_out));
-echo 'Archivo salida3.txt creado con éxito!'; */
-
-/* $lines = file('entrada.txt');
-foreach ($lines as $line_num => $line) {
-    echo "Line #{$line_num}: " . $line . "<br>";
-} */
-
-/* $file = fopen("entrada.txt", "r");
-
-while (!feof($file)) {
-    $line = fgets($file);
-    echo $line . "<br>";
-}
-
-fclose($file);
-*/
+file_put_contents('salida-final.txt', $results, FILE_APPEND);
+echo 'Archivo ' . $file_filled . ': registro agregado!<hr><br>';
