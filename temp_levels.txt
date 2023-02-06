@@ -1,10 +1,3 @@
-02116     2200589   4500
-080    $a D24
-100    $a Grossman, Louis I.
-245    $a Práctica endodóntica
-534    $a  Título del original en ingles: "Endodontic Practique"
-650    $a ENDODONCIA
-700    $a Muruzabal, Margarita $e Traductor
 041    $a Español
 043    $c Argentina
 245    $h Impreso en papel

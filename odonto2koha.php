@@ -16,7 +16,7 @@ flush();
  * para mejorar esta salida.
  */
 
-/* $file_name = 'entrada_indice_busqueda.csv';
+$file_name = 'entrada_indice_busqueda.csv';
 
 // datos del servidor de meran
 $servername = "localhost";
@@ -53,7 +53,7 @@ if ($result->num_rows > 0) {
 fclose($file_dump);
 $conn->close();
 
-echo '<hr><br>'; */
+echo '<hr><br>';
 
 
 #------------------ CONVERTIMOS EL ARCHIVO - PASO 2 -------------------#
@@ -67,7 +67,7 @@ echo '<hr><br>'; */
  */
 
 // archivo de salida convertido
-/* $file_redeable = 'entrada_indice_busqueda-legible.txt';
+$file_redeable = 'entrada_indice_busqueda-legible.txt';
 
 // corremos el yaz
 $command = 'yaz-marcdump -i marc -o line ' . $file_name;
@@ -80,7 +80,7 @@ foreach ($output as $line) {
 }
 
 file_put_contents($file_redeable, $output_arr);
-echo 'Archivo ' . $file_redeable . ' creado exitosamente!<hr><br>'; */
+echo 'Archivo ' . $file_redeable . ' creado exitosamente!<hr><br>';
 
 
 #------------------ LIMPIAMOS EL ARCHIVO - PASO 3 -------------------#
@@ -156,70 +156,66 @@ echo 'Archivo ' . $file_clean . ' creado exitosamente!<hr><br>';
 
 $file_filled = 'salida-paso-4.txt';
 
-$lines = file('salida.txt');
-//$lines = file($file_clean);
+$file = file('salida.txt');
+//$file = file($file_clean);
 
-$temp_arr = [];
-
+$record = []; // para trabajar con un registro
 $header = []; // para guardar el encabezado
 $levels = []; // para guarerar los niveles
 
-// $lines es un arreglo que contiene al archivo para leerlo linea a linea
-foreach ($lines as $line) {
-    if ($line !== PHP_EOL) {
+// $file es un arreglo que contiene al archivo para leerlo linea a linea
+foreach ($file as $file_line) {
+    if ($file_line !== PHP_EOL) {
         // mientra no encontremos una linea en blanco (separacion de registros)
         // vamos almacentando las lineas en otro arreglo temporal
-        $temp_arr[] = $line;
+        $record[] = $file_line;
+        file_put_contents('record.txt', $record);
     } else {
-        // trabajamos sobre el arreglo temporal
-        $count_020 = 0; // contador para recurrencias de camos 020 o 041
+        break;
+    }
+}
 
-        // separamos en encabezado y niveles
-        foreach ($temp_arr as $temp_line) {
-            // si encontramos un campo 020/041 incrementamos el contador
-            if (strpos($temp_line, "020") === 0 || strpos($temp_line, "041") === 0) {
-                $count_020++;
-            }
-
-            // si todavia no llegaos a la 020 armamos el encabezado
-            if ($count_020 === 0) {
-                $header[] = $temp_line;
-            }
-
-            // encontramos el primer 020 llenamos el primer el nivel
-            if ($count_020 > 0) {
-                $levels[] = $temp_line; // armamos el encabezado
-            }
-        }
-
-        // trabajamos con los niveles
-        /* $temp_level = [];
-        foreach ($levels as $level_line) {
-            $temp_level[] = $level_line;
-
-            // si encontramos otro nivel armamos hasta aca y lo agregamos al encabezado
-            // egregamos al archivo de salida el resultado
-            if (strpos($level_line, "020") === 0 || strpos($level_line, "041") === 0) {
-                $temp_level[] = PHP_EOL;
-
-                $result = array_merge($header, $temp_level);
-
-
-            }
-        } */
-
-        echo '<pre>';
-        print_r($header);
-        echo '</pre>';
-
-        //file_put_contents($file_filled, $result, FILE_APPEND | LOCK_EX);
-        //echo 'Archivo ' . $file_filled . ': registro agregado!<hr><br>';
-
-        // solo estamos analizando un registro
-        //break;
+// trabajamos sobre el arreglo temporal y separamos en encabezado y niveles
+$count_020 = 0; // contador para recurrencias de camos 020 o 041
+foreach ($record as $record_line) {
+    // si encontramos un campo 020/041 incrementamos el contador
+    if (strpos($record_line, "020") === 0 || strpos($record_line, "041") === 0) {
+        $count_020++;
     }
 
+    // si todavia no llegaos a la 020 armamos el encabezado
+    if ($count_020 === 0) {
+        $header[] = $record_line;
+    }
+
+    // encontramos el primer 020 llenamos el primer el nivel
+    if ($count_020 > 0) {
+        $levels[] = $record_line; // armamos el encabezado
+    }
 }
+
+file_put_contents('header.txt', $header);
+file_put_contents('levels.txt', $levels);
+
+// trabajamos con los niveles
+$temp_level = [];
+foreach ($levels as $level_line) {
+    // si encontramos otro nivel armamos hasta aca y lo agregamos al encabezado
+    // egregamos al archivo de salida el resultado
+    if (strpos($level_line, "020") === 0 || strpos($level_line, "041") === 0) {
+        //$temp_level[] = PHP_EOL;
+
+        $result = array_merge($header, $temp_level);
+    }
+
+    $temp_level[] = $level_line;
+}
+
+file_put_contents('temp_levels.txt',$temp_level);
+
+file_put_contents($file_filled, $result, FILE_APPEND | LOCK_EX);
+echo 'Archivo ' . $file_filled . ': registro agregado!<hr><br>';
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -281,7 +277,7 @@ print_r($array);
         //echo 'Hay ' . $count_EOL . ' registros en el archivo. Deberia haber ' . $count_910 . '<br><br>';
 
         // agrega al archivo de salida el contenido de lo quq vaos procesando
-        //file_put_contents($file_filled, $temp_arr, FILE_APPEND | LOCK_EX);
+        //file_put_contents($file_filled, $record, FILE_APPEND | LOCK_EX);
         //file_put_contents($file_filled, $result);
 
 
@@ -300,7 +296,7 @@ print_r($array);
     }
 
     if ($line === PHP_EOL) {
-        $result = array_replace($temp_arr, $header);
+        $result = array_replace($record, $header);
         $count_EOL++;
     }
 
